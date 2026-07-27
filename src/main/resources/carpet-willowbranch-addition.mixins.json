@@ -1,9 +1,9 @@
 {
 	"required": true,
-	"package": "com.example.mixin",
+	"package": "com.lsz.carpetwillowbranchaddition.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"CarpetWillowBranchAdditionMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

@@ -7,6 +7,10 @@ version = project.mod_version
 group = project.maven_group
 
 repositories {
+	maven {
+		name = "CurseMaven"
+		url = "https://cursemaven.com"
+	}
 	// Add repositories to retrieve artifacts from in here.
 	// You should only use this when depending on other mods because
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
@@ -18,7 +22,7 @@ loom {
 	splitEnvironmentSourceSets()
 
 	mods {
-		"modid" {
+		"carpet-willowbranch-addition" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}
@@ -33,6 +37,8 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+
+	modImplementation "curse.maven:carpet-349239:7367605"
 }
 
 processResources {

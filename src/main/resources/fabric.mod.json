@@ -1,38 +1,39 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "carpet-willowbranch-addition",
 	"version": "${version}",
-	"name": "Example Mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Carpet WillowBranch Addition",
+	"description": "Yet another carpet addition",
 	"authors": [
-		"Me!"
+		"WillowBranch127"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/WillowBranch127/CarpetWillowBranchAddition",
+		"sources": "https://github.com/WillowBranch127/CarpetWillowBranchAddition"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"license": "MIT",
+	"icon": "assets/carpet-willowbranch-addition/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"com.lsz.carpetwillowbranchaddition.CarpetWillowBranchAddition"
 		],
 		"client": [
-			"com.example.client.ExampleModClient"
+			"com.lsz.carpetwillowbranchaddition.client.CarpetWillowBranchAdditionClient"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
+		"carpet-willowbranch-addition.mixins.json",
 		{
-			"config": "modid.client.mixins.json",
+			"config": "carpet-willowbranch-addition.client.mixins.json",
 			"environment": "client"
 		}
 	],
 	"depends": {
 		"fabricloader": ">=0.19.3",
-		"minecraft": "~1.21.11",
+		"minecraft": "~1.21",
 		"java": ">=21",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"carpet": "*"
 	}
 }
