@@ -8,5 +8,5 @@ public class CarpetWillowBranchAdditionSettings {
             categories = {"willowbranch"}
     )
 
-    public static boolean testRule=false;
+    public static boolean startfreeze=false;
 }

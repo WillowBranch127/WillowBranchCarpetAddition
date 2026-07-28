@@ -1,5 +1,6 @@
 package com.lsz.carpetwillowbranchaddition.mixin;
 
+import com.lsz.carpetwillowbranchaddition.CarpetWillowBranchAdditionSettings;
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -10,5 +11,10 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class CarpetWillowBranchAdditionMixin {
 	@Inject(at = @At("HEAD"), method = "loadLevel")
 	private void init(CallbackInfo info) {
+		System.out.println("loadLevel finished");
+		MinecraftServer server = (MinecraftServer)(Object)this;
+		if (CarpetWillowBranchAdditionSettings.startfreeze) {
+			server.tickRateManager().setFrozen(true);
+		}
 	}
 }
