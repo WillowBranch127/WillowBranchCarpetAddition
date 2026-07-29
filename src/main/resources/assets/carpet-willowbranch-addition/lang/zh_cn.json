@@ -1,4 +1,5 @@
 {
-  "carpet.rule.startfreeze.desc": "测试",
-  "carpet.rule.startfreeze.perm": "second.permission"
+  "carpet.rule.startfreeze.desc": "在游戏开始时暂停",
+  "carpet.rule.seedcommandpermission.desc": "设置/seed命令的权限\n -1代表原版权限",
+  "carpet.rule.locatecommandpermission.desc": "设置/locate命令的权限\n -1代表原版权限"
 }

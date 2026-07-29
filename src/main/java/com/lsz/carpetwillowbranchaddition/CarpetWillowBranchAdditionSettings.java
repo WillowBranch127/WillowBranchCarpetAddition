@@ -8,5 +8,23 @@ public class CarpetWillowBranchAdditionSettings {
             categories = {"willowbranch"}
     )
 
-    public static boolean startfreeze=false;
+    public static boolean startFreeze=false;
+
+    @Rule(
+            categories = {"willowbranch"},
+            options = {"-1","0", "1", "2", "3", "4"}
+    )
+    public static int seedCommandPermission = -1;
+
+    @Rule(
+            categories = {"willowbranch"},
+            options = {"-1","0", "1", "2", "3", "4"}
+    )
+    public static int locateCommandPermission = -1;
+
+    @Rule(
+            categories = {"willowbranch"},
+            options = {"-1","0", "1", "2", "3", "4"}
+    )
+    public static int carpetCommandPermission = -1;
 }

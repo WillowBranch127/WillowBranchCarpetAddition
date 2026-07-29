@@ -3,7 +3,9 @@
 	"package": "com.lsz.carpetwillowbranchaddition.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"CarpetWillowBranchAdditionMixin"
+		"StartFreezeMixin",
+		"SeedCommandPermissionMixin",
+		"LocateCommandPermissionMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

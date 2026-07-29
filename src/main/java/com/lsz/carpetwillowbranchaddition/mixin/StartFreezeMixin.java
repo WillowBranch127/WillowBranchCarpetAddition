@@ -8,13 +8,15 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(MinecraftServer.class)
-public class CarpetWillowBranchAdditionMixin {
+public class StartFreezeMixin {
 	@Inject(at = @At("HEAD"), method = "loadLevel")
 	private void init(CallbackInfo info) {
 		System.out.println("loadLevel finished");
-		MinecraftServer server = (MinecraftServer)(Object)this;
-		if (CarpetWillowBranchAdditionSettings.startfreeze) {
+		MinecraftServer server = (MinecraftServer) (Object) this;
+		if (CarpetWillowBranchAdditionSettings.startFreeze) {
 			server.tickRateManager().setFrozen(true);
 		}
 	}
+
+
 }
