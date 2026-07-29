@@ -1,11 +1,13 @@
 {
 	"required": true,
-	"package": "com.lsz.carpetwillowbranchaddition.mixin",
+	"package": "com.lsz.willowbranchcarpetaddition.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
 		"StartFreezeMixin",
 		"SeedCommandPermissionMixin",
-		"LocateCommandPermissionMixin"
+		"LocateCommandPermissionMixin",
+		"TickCommandPermissionMixin",
+		"DataCommandPermissionMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

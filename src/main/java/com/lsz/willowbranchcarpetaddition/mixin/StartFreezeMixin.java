@@ -1,6 +1,6 @@
-package com.lsz.carpetwillowbranchaddition.mixin;
+package com.lsz.willowbranchcarpetaddition.mixin;
 
-import com.lsz.carpetwillowbranchaddition.CarpetWillowBranchAdditionSettings;
+import com.lsz.willowbranchcarpetaddition.WillowBranchCarpetAdditionSettings;
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -13,7 +13,7 @@ public class StartFreezeMixin {
 	private void init(CallbackInfo info) {
 		System.out.println("loadLevel finished");
 		MinecraftServer server = (MinecraftServer) (Object) this;
-		if (CarpetWillowBranchAdditionSettings.startFreeze) {
+		if (WillowBranchCarpetAdditionSettings.startFreeze) {
 			server.tickRateManager().setFrozen(true);
 		}
 	}

@@ -1,5 +1,0 @@
-{
-  "carpet.rule.startfreeze.desc": "Starts the world in a frozen state.",
-  "carpet.rule.seedcommandpermission.desc": "Reset the permission level of /seed\n -1 stands for the vanilla permission",
-  "carpet.rule.locatecommandpermission.desc": "Reset the permission level of /locate\n -1 stands for the vanilla permission"
-}

@@ -1,4 +1,4 @@
-package com.lsz.carpetwillowbranchaddition.utils;
+package com.lsz.willowbranchcarpetaddition.utils;
 
 import net.minecraft.commands.Commands;
 import net.minecraft.server.permissions.PermissionCheck;
