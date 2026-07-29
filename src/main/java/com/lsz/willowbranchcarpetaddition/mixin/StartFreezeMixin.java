@@ -9,11 +9,12 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(MinecraftServer.class)
 public class StartFreezeMixin {
-	@Inject(at = @At("HEAD"), method = "loadLevel")
+	@Inject(at = @At("TAIL"), method = "loadLevel")
 	private void init(CallbackInfo info) {
 		System.out.println("loadLevel finished");
 		MinecraftServer server = (MinecraftServer) (Object) this;
 		if (WillowBranchCarpetAdditionSettings.startFreeze) {
+			System.out.println("Freeze!!!");
 			server.tickRateManager().setFrozen(true);
 		}
 	}
