@@ -10,7 +10,7 @@ import carpet.CarpetServer;
 
 
 public class WillowBranchCarpetAddition implements ModInitializer {
-	public static final String MOD_ID = "carpet-willowbranch-addition";
+	public static final String MOD_ID = "willowbranch-carpet-addition";
 
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.

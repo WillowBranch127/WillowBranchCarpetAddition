@@ -29,10 +29,10 @@ public class WillowBranchCarpetAdditionExtension
     ) {
         String name = rule.name();
 
-        if (       !name.equals("seedCommandPermission")
-                && !name.equals("locateCommandPermission")
-                && !name.equals("tickCommandPermission")
-                && !name.equals("dataCommandPermission")) {
+        if (       !name.equals("seedCommandPermissionLevel")
+                && !name.equals("locateCommandPermissionLevel")
+                && !name.equals("tickCommandPermissionLevel")
+                && !name.equals("dataCommandPermissionLevel")) {
             return;
         }
 
