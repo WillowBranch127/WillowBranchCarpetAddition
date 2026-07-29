@@ -17,6 +17,10 @@ repositories {
 		name = "CurseMaven"
 		url = "https://cursemaven.com"
 	}
+
+	maven {
+		url = "https://masa.dy.fi/maven"
+	}
 	// Add repositories to retrieve artifacts from in here.
 	// You should only use this when depending on other mods because
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
@@ -44,7 +48,7 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 
-	implementation "curse.maven:carpet-349239:${project.carpet_version}"
+	implementation files("libs/fabric-carpet-26.1+v260402.jar")
 }
 
 processResources {
