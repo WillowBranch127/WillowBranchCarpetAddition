@@ -24,7 +24,7 @@ public class LocateCommandPermissionMixin {
 
         return new CarpetRulePermissionCheck(
                 original,
-                () -> WillowBranchCarpetAdditionSettings.locateCommandPermissionLevel
+                () -> WillowBranchCarpetAdditionSettings.locateCommandPermission
         );
     }
 }
