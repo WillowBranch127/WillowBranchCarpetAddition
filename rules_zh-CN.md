@@ -1,3 +1,9 @@
+<div align="right">
+
+[English](rules.md) | 简体中文
+
+</div>
+
 ### 启动冻结(startFreeze)
 在游戏开始时暂停
 注意：仅在永久更改时生效

@@ -1,3 +1,9 @@
+<div align="right">
+
+English | [简体中文](rules_zh-CN.md)
+
+</div>
+
 ### startFreeze
 
 Starts the world in a frozen state.
