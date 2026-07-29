@@ -1,5 +1,5 @@
 {
-  "carpet.rule.startFreeze.desc": "在游戏开始时暂停",
+  "carpet.rule.startFreeze.desc": "在游戏开始时暂停\n注意：仅在永久更改时生效",
   "carpet.rule.seedCommandPermissionLevel.desc": "设置/seed命令的权限\n -1代表原版权限",
   "carpet.rule.locateCommandPermissionLevel.desc": "设置/locate命令的权限\n -1代表原版权限",
   "carpet.rule.tickCommandPermissionLevel.desc": "设置/tick命令的权限\n -1代表原版权限",
