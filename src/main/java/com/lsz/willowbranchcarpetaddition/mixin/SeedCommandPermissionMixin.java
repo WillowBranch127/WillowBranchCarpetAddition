@@ -24,7 +24,7 @@ public class SeedCommandPermissionMixin {
 
         return new CarpetRulePermissionCheck(
                 original,
-                () -> WillowBranchCarpetAdditionSettings.seedCommandPermission
+                () -> WillowBranchCarpetAdditionSettings.seedCommandPermissionLevel
         );
     }
 }

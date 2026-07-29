@@ -14,23 +14,23 @@ public class WillowBranchCarpetAdditionSettings {
             categories = {"willowbranch"},
             options = {"-1","0", "1", "2", "3", "4"}
     )
-    public static int seedCommandPermission = -1;
+    public static int seedCommandPermissionLevel = -1;
 
     @Rule(
             categories = {"willowbranch"},
             options = {"-1","0", "1", "2", "3", "4"}
     )
-    public static int locateCommandPermission = -1;
+    public static int locateCommandPermissionLevel = -1;
 
     @Rule(
             categories = {"willowbranch"},
             options = {"-1","0", "1", "2", "3", "4"}
     )
-    public static int tickCommandPermission = -1;
+    public static int tickCommandPermissionLevel = -1;
 
     @Rule(
             categories = {"willowbranch"},
             options = {"-1","0", "1", "2", "3", "4"}
     )
-    public static int dataCommandPermission = -1;
+    public static int dataCommandPermissionLevel = -1;
 }

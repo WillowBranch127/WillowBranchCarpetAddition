@@ -24,6 +24,7 @@ public class DataCommandPermissionMixin {
 
         return new CarpetRulePermissionCheck(
                 original,
+                () -> WillowBranchCarpetAdditionSettings.dataCommandPermissionLevel
         );
     }
 }

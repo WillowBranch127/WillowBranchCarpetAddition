@@ -24,7 +24,7 @@ public class TickCommandPermissionMixin {
 
         return new CarpetRulePermissionCheck(
                 original,
-                () -> WillowBranchCarpetAdditionSettings.tickCommandPermission
+                () -> WillowBranchCarpetAdditionSettings.tickCommandPermissionLevel
         );
     }
 }
