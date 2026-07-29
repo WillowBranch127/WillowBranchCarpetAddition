@@ -1,9 +1,27 @@
-# Example Mod
+<div align="right">
 
-## Setup
+English | [简体中文](README_zh-CN.md)
 
-For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
+</div>
 
-## License
+# WillowBranch Carpet Addition
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+### A Carpet extension that adds convenient and vanilla-friendly rules to Minecraft.
+
+## Dependencies
+
+| Name       | Link                                            |
+| ---------- | ----------------------------------------------- |
+| Fabric API | [Modrinth](https://modrinth.com/mod/fabric-api) |
+| Carpet     | [Modrinth](https://modrinth.com/mod/carpet)     |
+
+## Supported Versions
+
+| Version  | Status        |
+| -------- | ------------- |
+| 26.2     | Supported     |
+| 26.1.x   | Supported     |
+| 1.21.11  | Supported     |
+| 1.21.11- | Not Supported |
+
+## [Rules](rules.md)
