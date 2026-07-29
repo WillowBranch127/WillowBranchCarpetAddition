@@ -1,17 +1,16 @@
-package com.lsz.carpetwillowbranchaddition.mixin;
+package com.lsz.willowbranchcarpetaddition.mixin;
 
 
-import com.lsz.carpetwillowbranchaddition.CarpetWillowBranchAdditionSettings;
-import com.lsz.carpetwillowbranchaddition.utils.CarpetRulePermissionCheck;
-import com.lsz.carpetwillowbranchaddition.utils.PermissionHelper;
-import net.minecraft.server.commands.SeedCommand;
+import com.lsz.willowbranchcarpetaddition.WillowBranchCarpetAdditionSettings;
+import com.lsz.willowbranchcarpetaddition.utils.CarpetRulePermissionCheck;
+import net.minecraft.server.commands.TickCommand;
 import net.minecraft.server.permissions.PermissionCheck;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
 
-@Mixin(SeedCommand.class)
-public class SeedCommandPermissionMixin {
+@Mixin(TickCommand.class)
+public class TickCommandPermissionMixin {
 
     @ModifyArg(
             method = "register",
@@ -23,7 +22,9 @@ public class SeedCommandPermissionMixin {
     )
     private static PermissionCheck modifySeedPermission(PermissionCheck original) {
 
-        return new CarpetRulePermissionCheck(original);
-        //return PermissionCheck.AlwaysPass.INSTANCE;
+        return new CarpetRulePermissionCheck(
+                original,
+                () -> WillowBranchCarpetAdditionSettings.tickCommandPermissionLevel
+        );
     }
 }

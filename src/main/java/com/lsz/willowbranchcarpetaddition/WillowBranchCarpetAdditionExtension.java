@@ -1,9 +1,8 @@
-package com.lsz.carpetwillowbranchaddition;
+package com.lsz.willowbranchcarpetaddition;
 
 import carpet.CarpetExtension;
 import carpet.CarpetServer;
 import carpet.api.settings.CarpetRule;
-import carpet.api.settings.SettingsManager;
 
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -18,7 +17,7 @@ import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerPlayer;
 
 
-public class CarpetWillowBranchAdditionExtension
+public class WillowBranchCarpetAdditionExtension
         implements CarpetExtension {
 
 
@@ -30,8 +29,10 @@ public class CarpetWillowBranchAdditionExtension
     ) {
         String name = rule.name();
 
-        if (!name.equals("seedCommandPermission")
-                && !name.equals("locateCommandPermission")) {
+        if (       !name.equals("seedCommandPermissionLevel")
+                && !name.equals("locateCommandPermissionLevel")
+                && !name.equals("tickCommandPermissionLevel")
+                && !name.equals("dataCommandPermissionLevel")) {
             return;
         }
 
@@ -49,24 +50,17 @@ public class CarpetWillowBranchAdditionExtension
     @Override
     public void onGameStarted() {
         CarpetServer.settingsManager.parseSettingsClass(
-                CarpetWillowBranchAdditionSettings.class
+                WillowBranchCarpetAdditionSettings.class
         );
         CarpetServer.settingsManager.registerRuleObserver(
                 this::onRuleChanged
         );
-        /*
-        System.out.println("WillowBranch settings loaded");
-        System.out.println(
-                "after parse = "
-                        + CarpetWillowBranchAdditionSettings.seedcommandpermission
-        );
-         */
     }
 
     @Override
     public Map<String, String> canHasTranslations(String lang) {
         try (InputStream is = getClass().getClassLoader()
-                .getResourceAsStream("assets/carpet-willowbranch-addition/lang/" + lang + ".json")) {
+                .getResourceAsStream("assets/willowbranch-carpet-addition/lang/" + lang + ".json")) {
             if (is == null) {
                 return Map.of();
             }

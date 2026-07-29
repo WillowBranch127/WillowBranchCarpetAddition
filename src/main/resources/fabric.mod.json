@@ -1,31 +1,31 @@
 {
 	"schemaVersion": 1,
-	"id": "carpet-willowbranch-addition",
+	"id": "willowbranch-carpet-addition",
 	"version": "${version}",
-	"name": "Carpet WillowBranch Addition",
+	"name": "WillowBranch Carpet  Addition",
 	"description": "Yet another carpet addition",
 	"authors": [
 		"WillowBranch127"
 	],
 	"contact": {
-		"homepage": "https://github.com/WillowBranch127/CarpetWillowBranchAddition",
-		"sources": "https://github.com/WillowBranch127/CarpetWillowBranchAddition"
+		"homepage": "https://github.com/WillowBranch127/WillowBranchCarpetAddition",
+		"sources": "https://github.com/WillowBranch127/WillowBranchCarpetAddition"
 	},
 	"license": "MIT",
-	"icon": "assets/carpet-willowbranch-addition/icon.png",
+	"icon": "assets/willowbranch-carpet-addition/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.lsz.carpetwillowbranchaddition.CarpetWillowBranchAddition"
+			"com.lsz.willowbranchcarpetaddition.WillowBranchCarpetAddition"
 		],
 		"client": [
-			"com.lsz.carpetwillowbranchaddition.client.CarpetWillowBranchAdditionClient"
+			"com.lsz.willowbranchcarpetaddition.client.WillowBranchCarpetAdditionClient"
 		]
 	},
 	"mixins": [
-		"carpet-willowbranch-addition.mixins.json",
+		"willowbranch-carpet-addition.mixins.json",
 		{
-			"config": "carpet-willowbranch-addition.client.mixins.json",
+			"config": "willowbranch-carpet-addition.client.mixins.json",
 			"environment": "client"
 		}
 	],

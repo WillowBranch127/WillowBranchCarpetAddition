@@ -1,6 +1,5 @@
-package com.lsz.carpetwillowbranchaddition;
+package com.lsz.willowbranchcarpetaddition;
 
-import carpet.script.external.Carpet;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
@@ -8,10 +7,9 @@ import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import carpet.CarpetServer;
-import net.minecraft.*;
 
 
-public class CarpetWillowBranchAddition implements ModInitializer {
+public class WillowBranchCarpetAddition implements ModInitializer {
 	public static final String MOD_ID = "carpet-willowbranch-addition";
 
 	// This logger is used to write text to the console and the log file.
@@ -29,7 +27,7 @@ public class CarpetWillowBranchAddition implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 
 		CarpetServer.manageExtension(
-				new CarpetWillowBranchAdditionExtension()
+				new WillowBranchCarpetAdditionExtension()
 		);
 
 	}

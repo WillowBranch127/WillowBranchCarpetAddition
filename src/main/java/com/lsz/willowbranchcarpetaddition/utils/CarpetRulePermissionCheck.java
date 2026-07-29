@@ -1,26 +1,29 @@
-package com.lsz.carpetwillowbranchaddition.utils;
+package com.lsz.willowbranchcarpetaddition.utils;
 
-import com.lsz.carpetwillowbranchaddition.CarpetWillowBranchAdditionSettings;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.server.permissions.PermissionCheck;
 import net.minecraft.server.permissions.PermissionSet;
 
+import java.util.function.IntSupplier;
+
 public class CarpetRulePermissionCheck implements PermissionCheck {
 
     private final PermissionCheck vanilla;
+    private final IntSupplier permissionSupplier;
 
-    public CarpetRulePermissionCheck(PermissionCheck vanilla) {
+    public CarpetRulePermissionCheck(
+            PermissionCheck vanilla,
+            IntSupplier permissionSupplier
+    ) {
         this.vanilla = vanilla;
+        this.permissionSupplier = permissionSupplier;
     }
 
     @Override
     public boolean check(PermissionSet permissionSet) {
-        System.out.println(
-                "checking seed permission, rule="
-                        + CarpetWillowBranchAdditionSettings.seedcommandpermission
-        );
+
         return PermissionHelper.createPermissionCheck(
-                CarpetWillowBranchAdditionSettings.seedcommandpermission,
+                permissionSupplier.getAsInt(),
                 vanilla
         ).check(permissionSet);
     }
