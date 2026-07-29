@@ -1,5 +1,5 @@
 {
-  "carpet.rule.startFreeze.desc": "Starts the world in a frozen state",
+  "carpet.rule.startFreeze.desc": "Starts the world in a frozen stateStarts the world in a frozen state\nTip: This only works when permanently changed.",
   "carpet.rule.seedCommandPermissionLevel.desc": "Sets the permission level of /seed\n-1 uses the vanilla permission check",
   "carpet.rule.locateCommandPermissionLevel.desc": "Sets the permission level of /locate\n-1 uses the vanilla permission check",
   "carpet.rule.tickCommandPermissionLevel.desc": "Sets the permission level of /tick\n-1 uses the vanilla permission check",
