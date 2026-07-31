@@ -16,6 +16,7 @@ import com.google.gson.JsonParser;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerPlayer;
+import com.lsz.willowbranchcarpetaddition.loggers.Loggers;
 
 
 public class WillowBranchCarpetAdditionExtension
@@ -57,6 +58,11 @@ public class WillowBranchCarpetAdditionExtension
         CarpetServer.settingsManager.registerRuleObserver(
                 this::onRuleChanged
         );
+    }
+
+    @Override
+    public void registerLoggers() {
+        Loggers.registerLoggers();
     }
 
 
