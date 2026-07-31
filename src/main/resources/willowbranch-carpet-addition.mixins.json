@@ -7,7 +7,8 @@
 		"SeedCommandPermissionMixin",
 		"LocateCommandPermissionMixin",
 		"TickCommandPermissionMixin",
-		"DataCommandPermissionMixin"
+		"DataCommandPermissionMixin",
+		"SpectatorCanControlContainersMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

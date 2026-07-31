@@ -33,4 +33,10 @@ public class WillowBranchCarpetAdditionSettings {
             options = {"-1","0", "1", "2", "3", "4"}
     )
     public static int dataCommandPermissionLevel = -1;
+
+    @Rule(
+            categories = {"willowbranch"}
+    )
+    public static boolean spectatorCanControlContainers = false;
+
 }

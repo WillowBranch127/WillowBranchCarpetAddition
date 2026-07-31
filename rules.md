@@ -58,3 +58,12 @@ Sets the permission level of `/data`.
 - Default Value: `-1`
 - Suggested Options: `-1`, `0`, `1`, `2`, `3`, `4`
 - Category: `willowbranch`
+
+### spectatorCanControlContainers
+
+Allows spectators to control the containers
+
+- Type: `boolean`
+- Default Value: `false`
+- Suggested Options: `true`, `false`
+- Category: `willowbranch`
