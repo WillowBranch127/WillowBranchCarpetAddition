@@ -25,3 +25,4 @@ English | [简体中文](README_zh-CN.md)
 | 1.21.11- | Not Supported |
 
 ## [Rules](rules.md)
+## [Loggers](loggers.md)
